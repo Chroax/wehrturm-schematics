@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/FirstLogin.unity
+    guid: 6df4b7fd83441d54e8bea4dd8a7286ad
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Upgrade.unity
+    guid: ca8a3fb97c7745a449557c287605321d
+  - enabled: 1
+    path: Assets/Scenes/My Team.unity
+    guid: 8a0d2715076239b4e864bba89a47c42f
+  - enabled: 1
+    path: Assets/Scenes/Wait Room.unity
+    guid: 22393a177adeb2c4a95af01a986b5b5a
+  - enabled: 1
+    path: Assets/Scenes/Quizz.unity
+    guid: b4365211664f5944daa13d4ab08b9995
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: f68e07242b01d9a4ca44fc3ad998cc97
   m_configObjects: {}

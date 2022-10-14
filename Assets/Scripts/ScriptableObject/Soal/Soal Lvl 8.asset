@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 8
+  m_EditorClassIdentifier: 
+  question: 'Empat orang mengemukakan dua kalimat Pisi : Aku berumur 18 tahun. Esti
+    berumur 15 tahun Elsi : Aku berumur 13 tahun. Reva berumur 17 tahun Esti : Pisi
+    berumur 16. Elsi berumur 19 tahun Reva : Esti berumur empat tahun lebih muda
+    daripada Pisi. Aku lebih tua tiga tahun dari Esti Jikalau hanya satu orang yang
+    berkata benar sepenuhnya dan lainnya berkata satu kebenaran dan satu kebohongan,
+    berapakah usia mereka masing-masing (Pisi, Elsi, Esti, Reva)? (ANSWER : X X X
+    X)'
+  level: 8
+  answer: 18 19 14 17
+  priceLoot: 50

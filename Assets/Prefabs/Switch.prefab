@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 3117288260549134905}
   - component: {fileID: 3117288260549134906}
   - component: {fileID: 4411090336127290401}
+  - component: {fileID: 4635819758486832202}
   - component: {fileID: 7544908077305456012}
   m_Layer: 5
   m_Name: Switch
@@ -168,7 +169,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7544908077305456012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4635819758486832202}
+        m_TargetAssemblyTypeName: Switch, Assembly-CSharp
+        m_MethodName: OnAndOffSwitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4635819758486832202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3117288260549134904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df58dc904ebf95641acc137441b3973d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSwitch: {fileID: 3117288261838795308}
+  offSwitch: {fileID: 3117288260353474097}
 --- !u!114 &7544908077305456012
 MonoBehaviour:
   m_ObjectHideFlags: 0

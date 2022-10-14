@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 19
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Elsi menyukai angka 97. Saking sukanya dia kemudian mengutak atik angkanya
+    di mana dia mengalikan angka tersebut dengan 3 kemudian menjumlahkannya dengan
+    satu. Apabila hasilnya adalah bilangan genap, maka angkanya akan dibagi dua,
+    apabila ganjil maka dia akan melakukan proses yang sama seperti sebelumnya. Karena
+    merasa ada yang aneh dimana angka yang dia dapatkan tidak pernah sama dengan
+    angka sebelumnya, maka dia melakukan hal tersebut secara terus menerus. Berapakah
+    angka pertama yang dia temukan di mana nilainya sudah pernah dia dapatkan pada
+    operasi sebelumnya?
+  level: 19
+  answer: 4
+  priceLoot: 50

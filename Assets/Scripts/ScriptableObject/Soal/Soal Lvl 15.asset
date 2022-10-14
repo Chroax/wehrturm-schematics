@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 15
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Elsi dan 4 temannya sedang berkumpul di sebuah cafe. Mereka membawa pasangan
+    masing-masing ke acara tersebut. Ketika semua sudah berkumpul, mereka saling
+    bersalaman. Semua orang melakukan salaman, namun tidak semua orang bersalaman
+    dengan semua orang. Tiap 2 orang juga bersalaman hanya tepat satu kali. Karena
+    kegabutannya, elsi diam-diam menghitung banyak nya salaman yang dilakukan tiap
+    orang. Namun ia lupa menghitung salaman yang ia sendiri lakukan. Tapi, Elsi ingat
+    bahwa jumlah salaman tiap orang yang sudah ia hitung adalah berbeda. Maka, berapa
+    kali kah Elsi bersalaman dalam acara itu?
+  level: 15
+  answer: 5
+  priceLoot: 50

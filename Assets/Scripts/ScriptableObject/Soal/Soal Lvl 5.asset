@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 5
+  m_EditorClassIdentifier: 
+  question: 'Setelah menyelesaikan final project nya, Daris sangat ingin healing
+    sendirian yaitu dengan mendaki sebuah gunung. Gunung yang dimaksud adalah gunung
+    anyar. Gunung tersebut memiliki ketinggian setinggi 95 kaki. Karena kaki daris
+    sangat panjang, dia mampu naik empat kaki di setiap jamnya, tapi karena daris
+    orangnya suka bercanda, dia turun dua kaki di setiap jamnya. Anehnya, setiap
+    kelipatan 10 jam daris terpeleset sejauh 6 kaki. Berapa lama waktu yang dibutuhkan
+    daris untuk mencapai puncak? (Answer : X Jam)'
+  level: 5
+  answer: 66 Jam
+  priceLoot: 50

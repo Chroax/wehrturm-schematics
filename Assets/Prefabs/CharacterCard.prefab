@@ -223,7 +223,8 @@ GameObject:
   - component: {fileID: 3417665402713692658}
   - component: {fileID: 3417665402713692657}
   - component: {fileID: 3417665402713692656}
-  - component: {fileID: 3417665402713692559}
+  - component: {fileID: 4110473631998420470}
+  - component: {fileID: 4908013475942095421}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -332,8 +333,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3417665402713692657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &3417665402713692559
+      m_Calls:
+      - m_Target: {fileID: 5612153168682142895}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: OpenDetailCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &4110473631998420470
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417665402713692557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc66542f4d1b8e847bfb185ef25ec240, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4908013475942095421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,18 +375,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3417665402713692557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: b36aedcd49cf1aa4c938ad9e00f5d2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
+  button: {fileID: 3417665402713692558}
 --- !u!1 &3417665402839028931
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +523,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3417665402970961912}
+  - component: {fileID: 5612153168682142895}
   - component: {fileID: 9171406439174665603}
+  - component: {fileID: 6627343212661080324}
   m_Layer: 5
   m_Name: CharacterCard
   m_TagString: Untagged
@@ -532,6 +559,36 @@ RectTransform:
   m_AnchoredPosition: {x: 279.12286, y: -181.63715}
   m_SizeDelta: {x: 558.2457, y: 299.4486}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5612153168682142895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417665402970961911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959e44d99c8ca0140b5293155b9915f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: {fileID: 3417665403764344784}
+  characterAttack: {fileID: 3417665403379953956}
+  characterHealth: {fileID: 3417665403485585966}
+  characterPrice: {fileID: 3417665403104667525}
+  character: {fileID: 0}
+  canvas: {fileID: 0}
+  characterImage: {fileID: 3417665403778371958}
+  cardDetail: {fileID: 0}
+  typeIcon: {fileID: 0}
+  detailImage: {fileID: 0}
+  detailName: {fileID: 0}
+  detailAttackType: {fileID: 0}
+  detailCooldown: {fileID: 0}
+  detailAttack: {fileID: 0}
+  detailHealth: {fileID: 0}
+  detailPrice: {fileID: 0}
+  detailAttackSpeed: {fileID: 0}
+  detailMoveSpeed: {fileID: 0}
 --- !u!222 &9171406439174665603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -540,6 +597,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3417665402970961911}
   m_CullTransparentMesh: 1
+--- !u!225 &6627343212661080324
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417665402970961911}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3417665403104667523
 GameObject:
   m_ObjectHideFlags: 0

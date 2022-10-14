@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 2
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Pchy sedang bermain kartu. Ia memiliki 5 kartu berwarna putih yang ia
+    nomori dengan angka 1 sampai 5. Selain itu, pchy juga punya 4 kartu hitam yang
+    ia nomori dengan angka 3 sampai 6. Ia menumpuk semua kartu sedemikian rupa sehingga
+    warna dari setiap kartunya selalu berganti-ganti dan bilangan pada kartu berwarna
+    putih selalu habis membagi bilangan pada kartu sebelum maupun sesudah kartu tersebut.
+    Berapakah jumlah bilangan pada 3 kartu yang berada pada tumpukan tengah?
+  level: 2
+  answer: 12
+  priceLoot: 50

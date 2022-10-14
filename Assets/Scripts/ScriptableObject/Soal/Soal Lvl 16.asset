@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 16
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Berapa banyak string dengan panjang 22 yang dapat dibentuk dari angka
+    nol dan satu, yang dimulai dan diakhiri angka 0, dengan ketentuan tidak ada 2
+    angka nol yang berdekatan, dan tidak ada 3 angka satu yang saling berdekatan?
+  level: 16
+  answer: 151
+  priceLoot: 50

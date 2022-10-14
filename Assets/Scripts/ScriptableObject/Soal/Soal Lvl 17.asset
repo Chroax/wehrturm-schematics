@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 17
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Shawn berencana membagikan semua permen miliknya kepada anak-anak di
+    sebuah TK. Dia memiliki sejumlah permen. Supaya adil, dia hanya akan membagikan
+    permen-permen tersebut sama rata ke sebuah gang beruntung yang dia temui dengan
+    masing-masing anak harus mendapat lebih dari satu permen. Namun, setelah dia
+    hitung kembali, ternyata dia tidak bisa membagikan permen tersebut sama rata,
+    berbeda halnya ketika dia menyimpan 1 sampai 5 permen untuk dirinya sendiri.
+    Berapakah minimal banyaknya permen Shawn?
+  level: 17
+  answer: 29
+  priceLoot: 50

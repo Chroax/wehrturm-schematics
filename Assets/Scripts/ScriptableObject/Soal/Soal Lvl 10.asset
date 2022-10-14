@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58aedabeb7b41374a9d8177e18d89a59, type: 3}
+  m_Name: Soal Lvl 10
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  question: Cyrille sedang belajar menyederhanakan bentuk pecahan. Elsi memberinya
+    tantangan dengan memberikan sebuah bilangan real yang kemudian Cyrille diminta
+    untuk menyederhanakan bentuk tersebut menjadi bentuk pecahan sesederhana mungkin.
+    Lalu elsi meminta Cyrille untuk mengalikan hasil pembilang dan penyebut pecahan
+    tadi. Jika hasil dari perkalian tersebut adalah 40!, berapa banyak kemungkinan
+    bilangan real yang diberikan elsi jika range bilangan real tersebut ada di antara
+    0 sampai 1?
+  level: 10
+  answer: 2048
+  priceLoot: 50

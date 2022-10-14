@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 4758829200483107585}
   - component: {fileID: 4758829200483107582}
   - component: {fileID: 4758829200483107584}
+  - component: {fileID: 3891074726883273083}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -235,7 +236,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4758829200483107582}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3891074726883273083}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4758829200116776630}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3891074726883273083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758829200483107580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36aedcd49cf1aa4c938ad9e00f5d2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 4758829200483107583}
 --- !u!1 &4758829201168799122
 GameObject:
   m_ObjectHideFlags: 0

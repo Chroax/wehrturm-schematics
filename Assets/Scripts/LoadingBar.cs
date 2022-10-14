@@ -2,36 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoadingBar : MonoBehaviour
 {
-    [SerializeField] Image bar;
-    [SerializeField] Slider timerBar;
-    [SerializeField] float time;
+    [SerializeField] private GameObject bar;
+    public float time;
 
     private bool stopTimer;
 
     public void Start()
     {
-        stopTimer = false;
-        timerBar.maxValue = time;
-        timerBar.value = time;
-        bar.color = new Color(0.06484962f, 1f, 0f, 1f);
+        LoadBar();
     }
-
+    public void LoadBar()
+    {
+        LeanTween.scaleX(bar, 0f, time);
+    }
     public void Update()
     {
+        
         float currentTime = time - Time.time;
 
-        if(currentTime <= 0)
-            stopTimer = true;
-
-        if(stopTimer == false)
-            timerBar.value = currentTime;
+        if (bar.transform.localScale.x <= 0)
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
         
-        if (timerBar.value < (0.34 * time) && timerBar.value > (0.167 * time))
-            bar.color = new Color(1f, 1f, 0f, 1f);
-        else if (timerBar.value < (0.167 * time))
-            bar.color = new Color(1f, 0.1456224f, 0f, 1f);
+        if (bar.transform.localScale.x < 0.5f && bar.transform.localScale.x > 0.3f)
+            bar.GetComponent<Image>().color = new Color(1f, 1f, 0f, 1f);
+        else if (bar.transform.localScale.x < 0.15f)
+            bar.GetComponent<Image>().color = new Color(1f, 0.1456224f, 0f, 1f);
     }
 }

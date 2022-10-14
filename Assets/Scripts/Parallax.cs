@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class Parallax : MonoBehaviour
 {
-    [SerializeField] RawImage background;
-    [SerializeField] RawImage middleground;
-    [SerializeField] RawImage frontground;
-    [SerializeField] float backX;
-    [SerializeField] float backY;
-    [SerializeField] float middleX;
-    [SerializeField] float middleY;
-    [SerializeField] float frontX;
-    [SerializeField] float frontY;
+    public RawImage background;
+    public RawImage middleground;
+    public RawImage frontground;
+    public float backX;
+    public float backY;
+    public float middleX;
+    public float middleY;
+    public float frontX;
+    public float frontY;
 
     // Update is called once per frame
     void Update()
