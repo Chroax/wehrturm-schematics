@@ -26,7 +26,6 @@ public class CameraController : MonoBehaviour
     {
         if(!PauseSystem.instance.gameIsPaused)
         {
-            Debug.Log(Button.isOverButton);
             if (!Button.isOverButton)
             {
                 if (Input.GetMouseButtonDown(0))

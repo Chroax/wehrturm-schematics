@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91766c06b235c2a4cae0f598ea035ef3, type: 3}
   m_Name: Warlock
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 6943562768184086589, guid: 3765a367fb48f9040bca18add088d6d3, type: 3}
+  characterSprite: {fileID: -1376527501, guid: b3f14de48cf65e34f8817b5194eaa5c0, type: 3}
   name: Warlock
   attack: 5
   health: 5
@@ -22,3 +22,4 @@ MonoBehaviour:
   type: 0
   attackType: 0
   cooldown: 5
+  characterPrefab: {fileID: 7573831300888823078, guid: 1080472d8eeff41d4ae5ee05ee3f88c4, type: 3}

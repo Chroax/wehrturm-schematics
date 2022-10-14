@@ -46,28 +46,6 @@ public class CharacterSpawnManager : MonoBehaviour
             characterSpawn3.GetComponent<CharacterSpawn>().coin.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = Player.instance.characterSlot3.price.ToString();
             characterSpawn3.GetComponent<CharacterSpawn>().LoadBar();
         }
-        if (Player.instance.characterSlot4 != null)
-        {
-            characterSpawn4.GetComponent<CharacterSpawn>().characterDetail = Player.instance.characterSlot4;
-            characterSpawn4.gameObject.name = Player.instance.characterSlot4.name;
-            characterSpawn4.GetComponent<CharacterSpawn>().characterSprite.sprite = Player.instance.characterSlot4.characterSprite;
-            characterSpawn4.GetComponent<CharacterSpawn>().characterSprite.color = new Color(1f, 1f, 1f, 1f);
-            characterSpawn4.GetComponent<CharacterSpawn>().loadBar.SetActive(true);
-            characterSpawn4.GetComponent<CharacterSpawn>().coin.SetActive(true);
-            characterSpawn4.GetComponent<CharacterSpawn>().coin.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = Player.instance.characterSlot4.price.ToString();
-            characterSpawn4.GetComponent<CharacterSpawn>().LoadBar();
-        }
-        if (Player.instance.characterSlot5 != null)
-        {
-            characterSpawn5.GetComponent<CharacterSpawn>().characterDetail = Player.instance.characterSlot5;
-            characterSpawn5.gameObject.name = Player.instance.characterSlot5.name;
-            characterSpawn5.GetComponent<CharacterSpawn>().characterSprite.sprite = Player.instance.characterSlot5.characterSprite;
-            characterSpawn5.GetComponent<CharacterSpawn>().characterSprite.color = new Color(1f, 1f, 1f, 1f);
-            characterSpawn5.GetComponent<CharacterSpawn>().loadBar.SetActive(true);
-            characterSpawn5.GetComponent<CharacterSpawn>().coin.SetActive(true);
-            characterSpawn5.GetComponent<CharacterSpawn>().coin.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = Player.instance.characterSlot5.price.ToString();
-            characterSpawn5.GetComponent<CharacterSpawn>().LoadBar();
-        }
     }
 
     // Update is called once per frame

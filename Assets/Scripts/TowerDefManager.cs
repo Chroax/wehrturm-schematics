@@ -53,8 +53,6 @@ public class TowerDefManager : MonoBehaviour
             else
             {
                 Player.instance.coin -= towerDefense.price;
-                Player.instance.maxDefense = towerDefense.defense;
-                Player.instance.currentDefense = towerDefense.defense;
             }
         }
     }

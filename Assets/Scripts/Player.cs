@@ -16,13 +16,9 @@ public class Player : MonoBehaviour
     public CharacterDetailSO characterSlot1 { get; set; }
     public CharacterDetailSO characterSlot2 { get; set; }
     public CharacterDetailSO characterSlot3 { get; set; }
-    public CharacterDetailSO characterSlot4 { get; set; }
-    public CharacterDetailSO characterSlot5 { get; set; }
     public int stage { get; set; }
     public int maxHealth { get; set; }
     public int currentHealth { get; set; }
-    public int maxDefense { get; set; }
-    public int currentDefense { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +42,6 @@ public class Player : MonoBehaviour
         this.stage = 1;
         this.maxHealth = 100;
         this.currentHealth = maxHealth;
-        this.maxDefense = 10;
-        this.currentDefense = maxDefense;
     }
 
     // Update is called once per frame

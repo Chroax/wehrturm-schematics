@@ -60,10 +60,6 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
                     Player.instance.characterSlot2 = null;
                 else if (findObject.GetComponent<CharacterSlot>().originName.Equals("CharacterSlot3"))
                     Player.instance.characterSlot3 = null;
-                else if (findObject.GetComponent<CharacterSlot>().originName.Equals("CharacterSlot4"))
-                    Player.instance.characterSlot4 = null;
-                else if (findObject.GetComponent<CharacterSlot>().originName.Equals("CharacterSlot5"))
-                    Player.instance.characterSlot5 = null;
                 if (description != null)
                     findObject.GetComponent<CharacterSlot>().description.SetActive(true);
             }
@@ -92,12 +88,7 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
             Player.instance.characterSlot2 = this.characterDetailSO;
         else if (originName.Equals("CharacterSlot3"))
             Player.instance.characterSlot3 = this.characterDetailSO;
-        else if (originName.Equals("CharacterSlot4"))
-            Player.instance.characterSlot4 = this.characterDetailSO;
-        else if (originName.Equals("CharacterSlot5"))
-            Player.instance.characterSlot5 = this.characterDetailSO;
     }
-
     public void OpenDetailCard()
     {
         if(characterDetailSO != null)

@@ -26,7 +26,7 @@ public class LoadingBar : MonoBehaviour
 
         if (bar.transform.localScale.x <= 0)
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Gameplay");
         }
         
         if (bar.transform.localScale.x < 0.5f && bar.transform.localScale.x > 0.3f)

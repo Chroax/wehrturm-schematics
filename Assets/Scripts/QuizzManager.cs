@@ -36,7 +36,7 @@ public class QuizzManager : MonoBehaviour
                 Player.instance.coin += selectedQuestion.priceLoot;
             }
             answer.text = "";
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Gameplay");
             Player.instance.levelSoal += 1;
         }
     }

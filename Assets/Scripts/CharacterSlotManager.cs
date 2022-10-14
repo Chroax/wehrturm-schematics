@@ -42,24 +42,6 @@ public class CharacterSlotManager : MonoBehaviour
                 characterSlot3.GetComponent<CharacterSlot>().description.SetActive(false);
 
         }
-        if (Player.instance.characterSlot4 != null)
-        {
-            characterSlot4.GetComponent<CharacterSlot>().characterDetailSO = Player.instance.characterSlot4;
-            characterSlot4.gameObject.name = Player.instance.characterSlot4.name;
-            characterSlot4.GetComponent<CharacterSlot>().characterImage.sprite = Player.instance.characterSlot4.characterSprite;
-            characterSlot4.GetComponent<CharacterSlot>().characterImage.color = new Color(1f, 1f, 1f, 1f);
-            if (characterSlot4.GetComponent<CharacterSlot>().description != null)
-                characterSlot4.GetComponent<CharacterSlot>().description.SetActive(false);
-        }
-        if (Player.instance.characterSlot5 != null)
-        {
-            characterSlot5.GetComponent<CharacterSlot>().characterDetailSO = Player.instance.characterSlot1;
-            characterSlot5.gameObject.name = Player.instance.characterSlot5.name;
-            characterSlot5.GetComponent<CharacterSlot>().characterImage.sprite = Player.instance.characterSlot5.characterSprite;
-            characterSlot5.GetComponent<CharacterSlot>().characterImage.color = new Color(1f, 1f, 1f, 1f);
-            if (characterSlot5.GetComponent<CharacterSlot>().description != null)
-                characterSlot5.GetComponent<CharacterSlot>().description.SetActive(false);
-        }
     }
 
     // Update is called once per frame

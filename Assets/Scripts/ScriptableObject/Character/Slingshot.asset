@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91766c06b235c2a4cae0f598ea035ef3, type: 3}
   m_Name: Slingshot
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 6492391481879774325, guid: 3765a367fb48f9040bca18add088d6d3, type: 3}
+  characterSprite: {fileID: 280628293, guid: 8175f0d83961f9e4ea2b74da079ebfe2, type: 3}
   name: Slingshot
   attack: 5
   health: 5
@@ -22,3 +22,4 @@ MonoBehaviour:
   type: 0
   attackType: 0
   cooldown: 5
+  characterPrefab: {fileID: 7573831300888823078, guid: 89bb2143bd6d04e579bef0bb58be6fdd, type: 3}

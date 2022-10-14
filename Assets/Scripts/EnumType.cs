@@ -14,8 +14,7 @@ public enum AttackSpeed
 public enum CharacterType
 {
     Range,
-    Melee,
-    Healer
+    Melee
 }
 public enum AttackType
 {

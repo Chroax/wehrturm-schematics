@@ -25,13 +25,9 @@ public class EssentialLoader : MonoBehaviour
             Player.instance.characterSlot1 = characterSlot[0];
             Player.instance.characterSlot2 = characterSlot[1];
             Player.instance.characterSlot3 = characterSlot[2];
-            Player.instance.characterSlot4 = characterSlot[3];
-            Player.instance.characterSlot5 = characterSlot[4];
             Player.instance.stage = 1;
             Player.instance.maxHealth = 100;
             Player.instance.currentHealth = Player.instance.maxHealth;
-            Player.instance.maxDefense = 10;
-            Player.instance.currentDefense = Player.instance.maxDefense;
         }
         if (GameManager.instance == null)
         {
