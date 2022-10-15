@@ -82,12 +82,10 @@ public class Card : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
         cardDetail.SetActive(true);
         detailImage.sprite = character.characterSprite;
         detailName.text = character.name;
-        detailAttackType.text = character.attackType.ToString();
         detailCooldown.text = "Cooldown: " + character.cooldown.ToString() + " S";
         detailAttack.text = character.attack.ToString();
         detailHealth.text = character.health.ToString();
         detailPrice.text = character.price.ToString();
-        detailAttackSpeed.text = character.attackSpeed.ToString();
         detailMoveSpeed.text = character.moveSpeed.ToString();
     }
 }

@@ -11,9 +11,8 @@ public class CharacterDetailSO : ScriptableObject
     public float health;
     public int price;
     public MoveSpeed moveSpeed;
-    public AttackSpeed attackSpeed;
     public CharacterType type;
-    public AttackType attackType;
+    public float attackCooldown;
     public float cooldown;
     public GameObject characterPrefab;
 }

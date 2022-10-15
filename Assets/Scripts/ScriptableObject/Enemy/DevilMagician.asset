@@ -15,7 +15,6 @@ MonoBehaviour:
   attack: 10
   health: 10
   moveSpeed: 0
-  attackSpeed: 0
+  attackCooldown: 5
   type: 0
-  attackType: 0
   enemyPrefab: {fileID: 7573831300888823078, guid: 2fae687d89c5d4ea38f011f6ddd20bb6, type: 3}

@@ -96,12 +96,10 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
             cardDetail.SetActive(true);
             detailImage.sprite = characterDetailSO.characterSprite;
             detailName.text = characterDetailSO.name;
-            detailAttackType.text = characterDetailSO.attackType.ToString();
             detailCooldown.text = "Cooldown: " + characterDetailSO.cooldown.ToString() + " S";
             detailAttack.text = characterDetailSO.attack.ToString();
             detailHealth.text = characterDetailSO.health.ToString();
             detailPrice.text = characterDetailSO.price.ToString();
-            detailAttackSpeed.text = characterDetailSO.attackSpeed.ToString();
             detailMoveSpeed.text = characterDetailSO.moveSpeed.ToString();
         }
     }

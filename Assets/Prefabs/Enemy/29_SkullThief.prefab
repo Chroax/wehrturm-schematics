@@ -3955,6 +3955,7 @@ GameObject:
   - component: {fileID: 7340593213987353755}
   - component: {fileID: 7721319715993971531}
   - component: {fileID: 8086202439210286133}
+  - component: {fileID: 5230050259361954222}
   m_Layer: 8
   m_Name: UnitRoot
   m_TagString: Untagged
@@ -4010,3 +4011,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5230050259361954222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092683277515177086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18aef50b94f5a6b43b3c68541bd87c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  enemySO: {fileID: 11400000, guid: f0c44922eedd1ae45815bbcbae008392, type: 2}
+  animator: {fileID: 8086202439210286133}
+  colliderDistance: 0.3
+  transform: {fileID: 2903918759276001594}
+  boxCollider: {fileID: -1377825628597959720}
+  range: 1
+  health: 10
+  gameObject: {fileID: 0}

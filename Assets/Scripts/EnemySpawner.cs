@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public static EnemySpawner instance;
     public List<LevelingSO> stage;
     public LevelingSO selectedStage;
     public Transform enemyPlaceholder;
@@ -14,6 +15,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        instance = this;
         if(Player.instance.stage != 0)
             selectedStage = stage[Player.instance.stage - 1];
         else

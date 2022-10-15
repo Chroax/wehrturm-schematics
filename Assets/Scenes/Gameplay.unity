@@ -2724,7 +2724,7 @@ GameObject:
   - component: {fileID: 1315807839}
   - component: {fileID: 1315807838}
   - component: {fileID: 1315807840}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Enemy Base
   m_TagString: Fortress
   m_Icon: {fileID: 0}

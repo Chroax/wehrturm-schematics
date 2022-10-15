@@ -18,8 +18,7 @@ MonoBehaviour:
   health: 5
   price: 5
   moveSpeed: 1
-  attackSpeed: 2
   type: 0
-  attackType: 0
+  attackCooldown: 5
   cooldown: 5
   characterPrefab: {fileID: 7573831300888823078, guid: 89bb2143bd6d04e579bef0bb58be6fdd, type: 3}

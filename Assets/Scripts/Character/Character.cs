@@ -11,20 +11,14 @@ public class Character : MonoBehaviour
     public float colliderDistance;
     public Transform transform;
     public BoxCollider2D boxCollider;
-    private float attackCooldown;
     private float coolDownTimer;
     public float range;
     public float health;
+    public GameObject gameObject;
 
     void Start()
     {
         this.health = characterDetailSO.health;
-        if(characterDetailSO.attackSpeed == AttackSpeed.Slow)
-            attackCooldown = 5;
-        else if (characterDetailSO.attackSpeed == AttackSpeed.Normal)
-            attackCooldown = 3;
-        else if (characterDetailSO.attackSpeed == AttackSpeed.Fast)
-            attackCooldown = 1;
         if (characterDetailSO.type == CharacterType.Melee)
             range = 1;
         else
@@ -39,20 +33,21 @@ public class Character : MonoBehaviour
         if(EnemiesInSight())
         {
             animator.SetBool("Run", false);
-            if (coolDownTimer >= attackCooldown)
+            if (coolDownTimer >= characterDetailSO.attackCooldown)
             {
                 coolDownTimer = 0;
                 if (characterDetailSO.type == CharacterType.Melee)
                     animator.SetTrigger("MeleeAttack");
                 else
                     animator.SetTrigger("MagicAttack");
+                Damage();
             }
         }
         if (!EnemiesInSight())
             Move();
 
-        if (health == 0)
-            Death();
+        if (health <= 0)
+            DestroyObject();
     }
 
     void Move()
@@ -71,7 +66,20 @@ public class Character : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, enemyLayer);
+
+        if (hit.collider != null)
+        {
+            if (hit.transform.gameObject.layer.Equals(8))
+            {
+                gameObject = hit.collider.transform.gameObject;
+            }
+            if (hit.transform.gameObject.layer.Equals(6))
+            {
+                gameObject = hit.collider.transform.gameObject;
+            }
+        }
         return hit.collider != null;
+
     }
 
     private void OnDrawGizmos()
@@ -85,13 +93,14 @@ public class Character : MonoBehaviour
     {
         if (EnemiesInSight())
         {
-            
+            if (gameObject != null)
+            {
+                if (gameObject.layer.Equals(8))
+                    gameObject.transform.Find("UnitRoot").GetComponent<Enemy>().health -= characterDetailSO.attack;
+                if (gameObject.layer.Equals(6))
+                    EnemySpawner.instance.health -= (int) characterDetailSO.attack;
+            }
         }
-    }
-
-    private void Death()
-    {
-        animator.SetTrigger("Death");
     }
 
     public void DestroyObject()

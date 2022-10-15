@@ -4028,7 +4028,7 @@ MonoBehaviour:
     m_Bits: 64
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 320
   characterDetailSO: {fileID: 11400000, guid: 9973ccc60b6f8634b959f95254741057, type: 2}
   animator: {fileID: 8086202439210286133}
   colliderDistance: -0.3
@@ -4036,3 +4036,4 @@ MonoBehaviour:
   boxCollider: {fileID: 5573148240232839645}
   range: 1
   health: 0
+  gameObject: {fileID: 0}
