@@ -7,13 +7,17 @@ public class PlayerStatus : MonoBehaviour
 {
     public TextMeshProUGUI coin;
     public TextMeshProUGUI teamName;
+    public TextMeshProUGUI stage;
     public GameObject life;
     public GameObject dead;
     public Transform currentLifePlaceholder;
     private int currentLifeCount;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (stage != null)
+            stage.text = "STAGE-" + Player.instance.stage.ToString();
         if (coin != null)
             coin.text = Player.instance.coin.ToString();
         if (teamName != null)
@@ -55,5 +59,7 @@ public class PlayerStatus : MonoBehaviour
                 currentLifeCount = Player.instance.currentLife;
             }
         }
+        if (stage != null)
+            stage.text = "STAGE-" + Player.instance.stage.ToString();
     }
 }

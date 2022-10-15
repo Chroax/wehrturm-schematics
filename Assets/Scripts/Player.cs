@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public static Player instance;
     public string teamName { get; set; }
     public int coin { get; set; }
-    public int currentLife { get; set; }
+    public int currentLife;
     public int maxLife { get; set; }
     public int levelSoal { get; set; }
     public int levelMissile { get; set; }
@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     public CharacterDetailSO characterSlot3 { get; set; }
     public int stage { get; set; }
     public int maxHealth { get; set; }
-    public int currentHealth { get; set; }
+    public int currentHealth;
 
     // Start is called before the first frame update
     void Start()

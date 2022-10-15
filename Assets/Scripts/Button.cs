@@ -42,7 +42,13 @@ public class Button : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void ChangeScene(string scene)
     {
-        SceneManager.LoadScene(scene);
+        if(scene.Equals("Quizz"))
+        {
+            if(Player.instance.currentLife > 0)
+                SceneManager.LoadScene(scene);
+        }
+        else
+            SceneManager.LoadScene(scene);
     }
 
     public void OpenPanel(GameObject panel)

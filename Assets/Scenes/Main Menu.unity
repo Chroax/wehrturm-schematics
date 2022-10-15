@@ -4457,6 +4457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: {fileID: 1869071782}
   teamName: {fileID: 1038831617}
+  stage: {fileID: 909755920}
   life: {fileID: 3414130233980420715, guid: 8c5f75e942a1aaf40a9ca6fd0c25917b, type: 3}
   dead: {fileID: 3414130233980420715, guid: cbe5c938150b75e4ea8c725ccbe0681d, type: 3}
   currentLifePlaceholder: {fileID: 643814263}

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public LayerMask wallLayer;
     public LayerMask enemyLayer;
-    public CharacterDetailSO characterDetailSO;
+    public EnemySO enemySO;
     public Animator animator;
     public float colliderDistance;
     public Transform transform;
@@ -18,14 +18,14 @@ public class Character : MonoBehaviour
 
     void Start()
     {
-        this.health = characterDetailSO.health;
-        if(characterDetailSO.attackSpeed == AttackSpeed.Slow)
+        this.health = enemySO.health;
+        if (enemySO.attackSpeed == AttackSpeed.Slow)
             attackCooldown = 5;
-        else if (characterDetailSO.attackSpeed == AttackSpeed.Normal)
+        else if (enemySO.attackSpeed == AttackSpeed.Normal)
             attackCooldown = 3;
-        else if (characterDetailSO.attackSpeed == AttackSpeed.Fast)
+        else if (enemySO.attackSpeed == AttackSpeed.Fast)
             attackCooldown = 1;
-        if (characterDetailSO.type == CharacterType.Melee)
+        if (enemySO.type == CharacterType.Melee)
             range = 1;
         else
             range = 7;
@@ -36,13 +36,13 @@ public class Character : MonoBehaviour
     {
         coolDownTimer += Time.deltaTime;
 
-        if(EnemiesInSight())
+        if (EnemiesInSight())
         {
             animator.SetBool("Run", false);
             if (coolDownTimer >= attackCooldown)
             {
                 coolDownTimer = 0;
-                if (characterDetailSO.type == CharacterType.Melee)
+                if (enemySO.type == CharacterType.Melee)
                     animator.SetTrigger("MeleeAttack");
                 else
                     animator.SetTrigger("MagicAttack");
@@ -58,17 +58,17 @@ public class Character : MonoBehaviour
     void Move()
     {
         animator.SetBool("Run", true);
-        if (characterDetailSO.moveSpeed == MoveSpeed.Fast)
-            transform.Translate(transform.right * 5 * Time.deltaTime);
-        else if (characterDetailSO.moveSpeed == MoveSpeed.Normal)
-            transform.Translate(transform.right * 3 * Time.deltaTime);
-        else if (characterDetailSO.moveSpeed == MoveSpeed.Slow)
-            transform.Translate(transform.right * 1 * Time.deltaTime);
+        if (enemySO.moveSpeed == MoveSpeed.Fast)
+            transform.Translate(-transform.right * 5 * Time.deltaTime);
+        else if (enemySO.moveSpeed == MoveSpeed.Normal)
+            transform.Translate(-transform.right * 3 * Time.deltaTime);
+        else if (enemySO.moveSpeed == MoveSpeed.Slow)
+            transform.Translate(-transform.right * 1 * Time.deltaTime);
     }
 
     private bool EnemiesInSight()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center - transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, enemyLayer);
         return hit.collider != null;
@@ -77,7 +77,7 @@ public class Character : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance
+        Gizmos.DrawWireCube(boxCollider.bounds.center - transform.right * range * transform.localScale.x * colliderDistance
             , new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
 
@@ -85,7 +85,7 @@ public class Character : MonoBehaviour
     {
         if (EnemiesInSight())
         {
-            
+
         }
     }
 
